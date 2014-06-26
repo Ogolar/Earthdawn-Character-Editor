@@ -27,6 +27,7 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;enumeration value="animal"/>
  *     &lt;enumeration value="armor"/>
  *     &lt;enumeration value="artisan"/>
+ *     &lt;enumeration value="bag"/>
  *     &lt;enumeration value="book"/>
  *     &lt;enumeration value="boot"/>
  *     &lt;enumeration value="brooch"/>
@@ -42,11 +43,13 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;enumeration value="missile weapon"/>
  *     &lt;enumeration value="mount"/>
  *     &lt;enumeration value="paper"/>
+ *     &lt;enumeration value="pen"/>
  *     &lt;enumeration value="pot"/>
  *     &lt;enumeration value="potion"/>
  *     &lt;enumeration value="ration"/>
  *     &lt;enumeration value="ring"/>
  *     &lt;enumeration value="salve"/>
+ *     &lt;enumeration value="stone"/>
  *     &lt;enumeration value="shield"/>
  *     &lt;enumeration value="talisman"/>
  *     &lt;enumeration value="throwing weapon"/>
@@ -75,6 +78,8 @@ public enum ItemkindType {
     ARMOR("armor"),
     @XmlEnumValue("artisan")
     ARTISAN("artisan"),
+    @XmlEnumValue("bag")
+    BAG("bag"),
     @XmlEnumValue("book")
     BOOK("book"),
     @XmlEnumValue("boot")
@@ -105,6 +110,8 @@ public enum ItemkindType {
     MOUNT("mount"),
     @XmlEnumValue("paper")
     PAPER("paper"),
+    @XmlEnumValue("pen")
+    PEN("pen"),
     @XmlEnumValue("pot")
     POT("pot"),
     @XmlEnumValue("potion")
@@ -115,6 +122,8 @@ public enum ItemkindType {
     RING("ring"),
     @XmlEnumValue("salve")
     SALVE("salve"),
+    @XmlEnumValue("stone")
+    STONE("stone"),
     @XmlEnumValue("shield")
     SHIELD("shield"),
     @XmlEnumValue("talisman")

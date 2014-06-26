@@ -41,6 +41,8 @@ import javax.xml.bind.annotation.XmlType;
  *       &lt;attribute name="realigned" type="{http://earthdawn.com/datatypes}unsigned_int" default="0" />
  *       &lt;attribute name="isinitiative" type="{http://earthdawn.com/datatypes}yesno_type" default="no" />
  *       &lt;attribute name="notbyversatility" type="{http://earthdawn.com/datatypes}yesno_type" default="no" />
+ *       &lt;attribute name="skilluse" type="{http://earthdawn.com/datatypes}unsigned_int" default="0" />
+ *       &lt;attribute name="canimprovised" type="{http://earthdawn.com/datatypes}yesno_type" default="no" />
  *     &lt;/restriction>
  *   &lt;/complexContent>
  * &lt;/complexType>
@@ -81,6 +83,10 @@ public class CAPABILITYType {
     protected YesnoType isinitiative;
     @XmlAttribute(name = "notbyversatility")
     protected YesnoType notbyversatility;
+    @XmlAttribute(name = "skilluse")
+    protected Integer skilluse;
+    @XmlAttribute(name = "canimprovised")
+    protected YesnoType canimprovised;
 
     /**
      * Gets the value of the limitation property.
@@ -409,6 +415,62 @@ public class CAPABILITYType {
      */
     public void setNotbyversatility(YesnoType value) {
         this.notbyversatility = value;
+    }
+
+    /**
+     * Gets the value of the skilluse property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link Integer }
+     *     
+     */
+    public int getSkilluse() {
+        if (skilluse == null) {
+            return  0;
+        } else {
+            return skilluse;
+        }
+    }
+
+    /**
+     * Sets the value of the skilluse property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link Integer }
+     *     
+     */
+    public void setSkilluse(Integer value) {
+        this.skilluse = value;
+    }
+
+    /**
+     * Gets the value of the canimprovised property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link YesnoType }
+     *     
+     */
+    public YesnoType getCanimprovised() {
+        if (canimprovised == null) {
+            return YesnoType.NO;
+        } else {
+            return canimprovised;
+        }
+    }
+
+    /**
+     * Sets the value of the canimprovised property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link YesnoType }
+     *     
+     */
+    public void setCanimprovised(YesnoType value) {
+        this.canimprovised = value;
     }
 
 }

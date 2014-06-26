@@ -33,20 +33,20 @@ import de.earthdawn.data.*;
 public class ECEWorker {
 	public static ApplicationProperties PROPERTIES=ApplicationProperties.create();
 	public static final String durabilityTalentName = PROPERTIES.getDurabilityName();
-	public static final String questorTalentName = PROPERTIES.getQuestorTalentName();
 	public static final ECECapabilities capabilities = PROPERTIES.getCapabilities();
 	public static final List<KNACKBASEType> globalTalentKnackList = PROPERTIES.getTalentKnacks();
 	public static final String karmaritualName = PROPERTIES.getKarmaritualName();
 	public static OPTIONALRULES OptionalRule=PROPERTIES.getOptionalRules();
 	public static boolean OptionalRule_SpellLegendPointCost=OptionalRule.getSPELLLEGENDPOINTCOST().getUsed().equals(YesnoType.YES);
 	public static boolean OptionalRule_KarmaLegendPointCost=OptionalRule.getKARMALEGENDPOINTCOST().getUsed().equals(YesnoType.YES);
-	public static boolean OptionalRule_QuestorTalentNeedLegendpoints=OptionalRule.getQUESTORTALENTNEEDLEGENDPOINTS().getUsed().equals(YesnoType.YES);
 	public static boolean OptionalRule_autoincrementDisciplinetalents=OptionalRule.getAUTOINCREMENTDISCIPLINETALENTS().getUsed().equals(YesnoType.YES);
 	public static boolean OptionalRule_LegendpointsForAttributeIncrease=OptionalRule.getLEGENDPOINTSFORATTRIBUTEINCREASE().getUsed().equals(YesnoType.YES);
 	public static boolean OptionalRule_AutoInsertLegendPointSpent=OptionalRule.getAUTOINSERTLEGENDPOINTSPENT().getUsed().equals(YesnoType.YES);
 	public static boolean OptionalRule_KeepLegendPointSync=OptionalRule.getKEEPLEGENDPOINTSYNC().getUsed().equals(YesnoType.YES);
 	public static boolean OptionalRule_EnduringArmorByStrength=OptionalRule.getENDURINGARMORBYSTRENGTH().getUsed().equals(YesnoType.YES);
 	public static boolean OptionalRule_AligningTalentsAndSkills=OptionalRule.getALIGNINGTALENTSANDSKILLS().getUsed().equals(YesnoType.YES);
+	public static boolean OptionalRule_NoNegativeKarmaMax=PROPERTIES.getOptionalRules().getATTRIBUTE().getLimitoneway().equals(YesnoType.YES);
+	public static int OptionalRule_MaxAttributeBuyPoints=PROPERTIES.getOptionalRules().getATTRIBUTE().getPoints();
 	public static final HashMap<String, SPELLDEFType> spelllist = PROPERTIES.getSpells();
 	private HashMap<String, ATTRIBUTEType> characterAttributes=null;
 	CalculatedLPContainer calculatedLP = null;
@@ -57,13 +57,14 @@ public class ECEWorker {
 		OptionalRule=PROPERTIES.getOptionalRules();
 		OptionalRule_SpellLegendPointCost=OptionalRule.getSPELLLEGENDPOINTCOST().getUsed().equals(YesnoType.YES);
 		OptionalRule_KarmaLegendPointCost=OptionalRule.getKARMALEGENDPOINTCOST().getUsed().equals(YesnoType.YES);
-		OptionalRule_QuestorTalentNeedLegendpoints=OptionalRule.getQUESTORTALENTNEEDLEGENDPOINTS().getUsed().equals(YesnoType.YES);
 		OptionalRule_autoincrementDisciplinetalents=OptionalRule.getAUTOINCREMENTDISCIPLINETALENTS().getUsed().equals(YesnoType.YES);
 		OptionalRule_LegendpointsForAttributeIncrease=OptionalRule.getLEGENDPOINTSFORATTRIBUTEINCREASE().getUsed().equals(YesnoType.YES);
 		OptionalRule_AutoInsertLegendPointSpent=OptionalRule.getAUTOINSERTLEGENDPOINTSPENT().getUsed().equals(YesnoType.YES);
 		OptionalRule_KeepLegendPointSync=OptionalRule.getKEEPLEGENDPOINTSYNC().getUsed().equals(YesnoType.YES);
 		OptionalRule_EnduringArmorByStrength=OptionalRule.getENDURINGARMORBYSTRENGTH().getUsed().equals(YesnoType.YES);
 		OptionalRule_AligningTalentsAndSkills=OptionalRule.getALIGNINGTALENTSANDSKILLS().getUsed().equals(YesnoType.YES);
+		OptionalRule_NoNegativeKarmaMax=PROPERTIES.getOptionalRules().getATTRIBUTE().getLimitoneway().equals(YesnoType.YES);
+		OptionalRule_MaxAttributeBuyPoints=PROPERTIES.getOptionalRules().getATTRIBUTE().getPoints();
 	}
 
 	public ECEWorker(CharacterContainer character) {
@@ -107,7 +108,7 @@ public class ECEWorker {
 		weaponList.addAll(magicWeapons);
 
 		// **ATTRIBUTE**
-		int karmaMaxBonus = PROPERTIES.getOptionalRules().getATTRIBUTE().getPoints();
+		int karmaMaxBonus = OptionalRule_MaxAttributeBuyPoints;
 		// Der Bonus auf das Maximale Karma ergibt sich aus den übriggebliebenen Kaufpunkten bei der Charaktererschaffung
 		characterAttributes = character.getAttributes();
 		for (NAMEVALUEType raceattribute : namegiver.getATTRIBUTE()) {
@@ -132,6 +133,10 @@ public class ECEWorker {
 		}
 		if( karmaMaxBonus <0 ) {
 			errorout.println("The character was generated with to many spent attribute buy points: "+(-karmaMaxBonus));
+			if( OptionalRule_NoNegativeKarmaMax ) {
+				errorout.println("The to many spent attribute buy points will not result in a negative karma maximum.");
+				karmaMaxBonus=0;
+			}
 		}
 
 		// **DEFENSE**
@@ -260,6 +265,7 @@ public class ECEWorker {
 		// Wenn ein Charakter Weihepunkte erhalten hat, dann steht ihm das Questorentalent zur Verfügung
 		DEVOTIONType devotionPoints = character.getDevotionPoints();
 		if( (devotionPoints!=null) && (devotionPoints.getValue()>0) ) {
+			String questorTalentName = PROPERTIES.getQuestorTalentName();
 			TALENTABILITYType talent = new TALENTABILITYType();
 			talent.setName(questorTalentName);
 			talent.setLimitation(devotionPoints.getPassion());
@@ -284,7 +290,11 @@ public class ECEWorker {
 				TALENTType talent = new TALENTType();
 				talent.setName(namegivertalents.get(t).getName());
 				talent.getLIMITATION().add(namegivertalents.get(t).getLimitation());
-				talent.setCircle(0);
+				if( talent.getName().equals(PROPERTIES.getQuestorTalentName()) ) {
+					talent.setCircle(5);
+				} else {
+					talent.setCircle(0);
+				}
 				capabilities.enforceCapabilityParams(talent);
 				talent.setTEACHER(new TALENTTEACHERType());
 				RANKType rank = new RANKType();
@@ -762,14 +772,28 @@ public class ECEWorker {
 				rank = new RANKType();
 				talent.setRANK(rank);
 			}
-			if( disTalents && OptionalRule_autoincrementDisciplinetalents &&
-					(talent.getCircle() < disciplinecircle) && (rank.getRank() < disciplinecircle) ) {
-				rank.setRank(disciplinecircle);
+			// Nur in der Erstdisziplin kann ein Startrang existieren.
+			if( (disciplinenumber!=1) && (rank.getStartrank()!=0) ) {
+				rank.setStartrank(0);
+				errorout.println("The talent '"+talent.getName()+"' is from "+disciplinenumber+". discipline and can't have any start rank. Clear start rank.");
+			}
+			// Talente aus höheren Kreisen können keine Startranks haben, da Startranks nur bei der Charaktererschaffung vergeben werden.
+			if( (talent.getCircle()>1) && (rank.getStartrank()>0) ) {
+				rank.setStartrank(0);
+				errorout.println("The talent '"+talent.getName()+"' is from circle "+talent.getCircle()+". Only talents of circle 1 of the first discipline can have start ranks. The talent start rank was cleared fit this sittuation.");
+			}
+			if( disTalents && OptionalRule_autoincrementDisciplinetalents && (rank.getRank() < disciplinecircle) ) {
+				if( talent.getCircle() < disciplinecircle ) {
+					rank.setRank(disciplinecircle);
+				} else if (talent.getCircle() == disciplinecircle) {
+					rank.setRank(1);
+				} else {
+					rank.setRank(0);
+					errorout.println("The talent '"+talent.getName()+"' is from circle "+talent.getCircle()+", but the circe of the discipline is only "+disciplinecircle+". The talent rank was cleared fit this sittuation.");
+				}
 			}
 			if( rank.getRank() < rank.getStartrank() ) rank.setRank(rank.getStartrank());
 			if( rank.getRank() < rank.getRealignedrank() ) rank.setRank(rank.getRealignedrank());
-			// Talente aus höheren Kreisen können keine Startranks haben, da Startranks nur bei der Charaktererschaffung vergeben werden.
-			if( (talent.getCircle()>1) && (rank.getStartrank()>0) ) rank.setStartrank(0);
 			capabilities.enforceCapabilityParams(talent);
 			rank.setBonus(talent.getBonus());
 			if( rank.getRank() < 1 ) {
@@ -804,8 +828,6 @@ public class ECEWorker {
 				}
 				rankhistory.setRank(rank.getRank());
 			}
-			// Disziplintalente mir Rank 0 darf es nicht geben.
-			if( disTalents && (rank.getRank()<1) && (talent.getCircle()>1) ) rank.setRank(1);
 			// Prüfe ob extra LP Kosten entstanden sind, da eine neue Disziplin "zu früh" erlernt wurde.
 			int newDisciplineTalentCost=0;
 			List<CHARACTERISTICSCOST> newDisciplineTalentCosts = PROPERTIES.getCharacteristics().getNewDisciplineTalentCost(disciplinenumber);
@@ -820,11 +842,6 @@ public class ECEWorker {
 						newDisciplineTalentCost = newDisciplineTalentCosts.get(mincircle).getCost();
 					}
 				}
-			}
-			// Nur in der Erstdisziplin kann ein Startrang existieren.
-			if( (disciplinenumber!=1) && (rank.getStartrank()!=0) ) {
-				rank.setStartrank(0);
-				errorout.println("The talent '"+talent.getName()+"' is from "+disciplinenumber+". discipline and can't have any start rank. Clear start rank.");
 			}
 			// Wenn zu dem Talent ein Skill aligned wurde, dann kann es dazu keinen Startrank geben.
 			if( talent.getALIGNEDSKILL() != null ) {

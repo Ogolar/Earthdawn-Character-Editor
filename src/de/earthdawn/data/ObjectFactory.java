@@ -390,19 +390,19 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link StringlistType }
-     * 
-     */
-    public StringlistType createStringlistType() {
-        return new StringlistType();
-    }
-
-    /**
      * Create an instance of {@link THREADRANKType }
      * 
      */
     public THREADRANKType createTHREADRANKType() {
         return new THREADRANKType();
+    }
+
+    /**
+     * Create an instance of {@link StringlistType }
+     * 
+     */
+    public StringlistType createStringlistType() {
+        return new StringlistType();
     }
 
     /**
@@ -963,6 +963,30 @@ public class ObjectFactory {
      */
     public CALCULATEDLEGENDPOINTADJUSTMENTType createCALCULATEDLEGENDPOINTADJUSTMENTType() {
         return new CALCULATEDLEGENDPOINTADJUSTMENTType();
+    }
+
+    /**
+     * Create an instance of {@link TRANSLATIONS }
+     * 
+     */
+    public TRANSLATIONS createTRANSLATIONS() {
+        return new TRANSLATIONS();
+    }
+
+    /**
+     * Create an instance of {@link TRANSLATIONType }
+     * 
+     */
+    public TRANSLATIONType createTRANSLATIONType() {
+        return new TRANSLATIONType();
+    }
+
+    /**
+     * Create an instance of {@link TranslationlabelType }
+     * 
+     */
+    public TranslationlabelType createTranslationlabelType() {
+        return new TranslationlabelType();
     }
 
     /**

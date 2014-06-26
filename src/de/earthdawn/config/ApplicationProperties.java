@@ -19,12 +19,14 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 import java.io.File;
 import java.io.FileOutputStream;
-import java.io.FilenameFilter;
 import java.io.IOException;
 import java.io.PrintStream;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collection;
+import java.util.Collections;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.ResourceBundle;
@@ -32,6 +34,7 @@ import java.util.Set;
 import java.util.TreeMap;
 
 import javax.xml.bind.JAXBContext;
+import javax.xml.bind.JAXBElement;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
 import javax.xml.bind.Unmarshaller;
@@ -46,7 +49,8 @@ import de.earthdawn.ui2.EDMainWindow;
 public class ApplicationProperties {
 
     /** Ein- und Ausgabe der Allgemeinen Konfigurationseinstellungen. */
-    private static CAPABILITIES CAPABILITIES = new CAPABILITIES();
+	private static List<CAPABILITIES> CAPABILITIES;
+	private static List<TRANSLATIONS> TRANSLATIONS;
     private static KNACKS KNACKS = new KNACKS();
     private static SPELLS SPELLS = new SPELLS();
     private static NAMEGIVERS NAMEGIVERS = new NAMEGIVERS();
@@ -56,6 +60,7 @@ public class ApplicationProperties {
     private static HELP HELP = new HELP();
     private static ECEGUILAYOUT ECEGUILAYOUT = new ECEGUILAYOUT();
     private static LanguageType LANGUAGE = LanguageType.EN;
+	private static RulesetversionType RULESETVERSION = RulesetversionType.ED_3;
     private static EDRANDOMNAME RANDOMNAMES = new EDRANDOMNAME();
     private static SPELLDESCRIPTIONS SPELLDESCRIPTIONS = new SPELLDESCRIPTIONS();
     private ECECharacteristics CHARACTERISTICS = null;
@@ -67,7 +72,7 @@ public class ApplicationProperties {
     private ResourceBundle MESSAGES = null;
 
     /** Disziplinen (Name Label geordnet) */
-    private static final Map<String, DISCIPLINE> DISCIPLINES = new TreeMap<String, DISCIPLINE>();
+    private static final Map<RulesetversionType,Map<String, DISCIPLINE>> DISCIPLINES = new HashMap<RulesetversionType,Map<String, DISCIPLINE>>();
     /** RandomCharacterTemplates (Name Label geordnet) */
     private static final RandomCharacterTemplates RANDOMCHARACTERTEMPLATES = new RandomCharacterTemplates();
 
@@ -108,7 +113,7 @@ public class ApplicationProperties {
 	}
 
 	public DISCIPLINE getDisziplin(String name) {
-		DISCIPLINE discipline = DISCIPLINES.get(name);
+		DISCIPLINE discipline = DISCIPLINES.get(RULESETVERSION).get(name);
 		if( discipline == null ) {
 			System.err.println("Discipline '"+name+"' does not exist.");
 		}
@@ -116,12 +121,12 @@ public class ApplicationProperties {
 	}
 
 	public Set<String> getAllDisziplinNames() {
-		return DISCIPLINES.keySet();
+		return DISCIPLINES.get(RULESETVERSION).keySet();
 	}
 
 	public Map<String,Map<String,?>> getAllDisziplinNamesAsTree() {
 		Map<String,Map<String,?>> result = new HashMap<String, Map<String,?>>();
-		for( String s : DISCIPLINES.keySet() ) result.put(s,new HashMap<String, Map<String,?>>());
+		for( String s : DISCIPLINES.get(RULESETVERSION).keySet() ) result.put(s,new HashMap<String, Map<String,?>>());
 		return shrinkStringMap(result);
 	}
 
@@ -159,11 +164,52 @@ public class ApplicationProperties {
 			Map<String,Map<String,?>> element = (Map<String,Map<String,?>>)(result.get(s));
 			if( ! element.isEmpty() ) result.put( s, shrinkStringMap(element) );
 		}
+		return smallStringMap(result, 8);
+	}
+
+	private Map<String,Map<String,?>> smallStringMap(Map<String,Map<String,?>> map, int maxsize) {
+		List<String> topLevelStrings = Arrays.asList(map.keySet().toArray(new String[0]));
+		Collections.sort(topLevelStrings);
+		int step=topLevelStrings.size()/maxsize;
+		if( step<2 ) return map;
+		Map<String,Map<String,?>> result = new HashMap<String, Map<String,?>>();
+		Iterator<String> iter = topLevelStrings.iterator();
+		String s = null;
+		if( iter.hasNext() ) s = iter.next();
+		while( s != null ) {
+			String title = s.substring(0, 3) + " - ";
+			Map<String,Map<String,?>> entry = new HashMap<String, Map<String,?>>();
+			entry.put(s, map.get(s));
+			int count = step;
+			while( count > 1) {
+				count--;
+				if( iter.hasNext() ) s=iter.next();
+				else {
+					s=null;
+					break;
+				}
+				entry.put(s, map.get(s));
+			}
+			if( s != null ) {
+				String last = s.substring(0,3);
+				title += last;
+				while( true ) {
+					if( ! iter.hasNext() ) {
+						s=null;
+						break;
+					}
+					s = iter.next();
+					if( ! s.startsWith(last) ) break;
+					entry.put( s, map.get(s) );
+				}
+			}
+			result.put(title,entry);
+		}
 		return result;
 	}
 
 	public Collection<DISCIPLINE> getAllDisziplines() {
-		return DISCIPLINES.values();
+		return DISCIPLINES.get(RULESETVERSION).values();
 	}
 
 	public List<NAMEGIVERABILITYType> getNamegivers() {
@@ -199,7 +245,10 @@ public class ApplicationProperties {
 	}
 
 	public ECECapabilities getCapabilities() {
-		return new ECECapabilities(CAPABILITIES.getSKILLOrTALENT());
+		for( CAPABILITIES c : CAPABILITIES ) {
+			if( c.getLang().equals(LANGUAGE) && c.getRulesetversion().equals(RULESETVERSION) ) return new ECECapabilities(c.getSKILLOrTALENT());
+		}
+		return new ECECapabilities();
 	}
 
 	public HashMap<String,TALENTABILITYType> getTalentsByCircle(int maxcirclenr) {
@@ -369,7 +418,9 @@ public class ApplicationProperties {
 
 	public HashMap<ATTRIBUTENameType,String> getAttributeNames() {
 		HashMap<ATTRIBUTENameType,String> result = new HashMap<ATTRIBUTENameType,String>();
+		// Fill result HashMap with default values
 		for( ATTRIBUTENameType attr : ATTRIBUTENameType.values() ) result.put(attr,attr.value());
+		// Search for translation in the config
 		for( NAMESATTRIBUTESType attributes : NAMES.getATTRIBUTES() ) {
 			if( attributes.getLang().equals(LANGUAGE) ) {
 				for( NAMESATTRIBUTEType attribute : attributes.getATTRIBUTE() ) {
@@ -512,7 +563,7 @@ public class ApplicationProperties {
 		RANDOMCHARACTERTEMPLATES.setItems(ITEMS);
 		RANDOMCHARACTERTEMPLATES.setSpells(SPELLS.getSPELL());
 		RANDOMCHARACTERTEMPLATES.setCapabilities(getCapabilities());
-		RANDOMCHARACTERTEMPLATES.setDisciplineDefinitions(DISCIPLINES);
+		RANDOMCHARACTERTEMPLATES.setDisciplineDefinitions(DISCIPLINES.get(RULESETVERSION));
 		return RANDOMCHARACTERTEMPLATES.generateRandomCharacter(template);
 	}
 
@@ -545,55 +596,70 @@ public class ApplicationProperties {
 			return;
 		}
 		try {
+			// translation laden
+			// --- Bestimmen aller Dateien im Unterordner 'translation'
+			// --- Einlesen der Dateien
+			TRANSLATIONS=new ArrayList<TRANSLATIONS>();
+			for(File translation : selectallxmlfiles(new File("./config/translation"))) {
+				System.out.print("Lese Konfigurationsdatei: '" + translation.getCanonicalPath() + "' ... ");
+				TRANSLATIONS t1 = (TRANSLATIONS) unmarshaller.unmarshal(translation);
+				if( t1 == null ) { System.out.println(" parse error."); continue; }
+				boolean notfound=true;
+				for( TRANSLATIONS t2 : TRANSLATIONS ) {
+					if( t2.getRulesetversion().equals(t1.getRulesetversion()) ){
+						notfound=false;
+						t2.getCAPABILITY().addAll(t1.getCAPABILITY());
+						t2.getDISCIPLINE().addAll(t1.getDISCIPLINE());
+						t2.getSPELL().addAll(t1.getSPELL());
+						t2.getITEM().addAll(t1.getITEM());
+						break;
+					}
+				}
+				if( notfound ) TRANSLATIONS.add(t1);
+				System.out.println(" done.");
+			}
+
 			// disziplinen laden
 			// --- Bestimmen aller Dateien im Unterordner 'disciplines'
-			File[] files = new File("./config/disciplines").listFiles(new FilenameFilter() {
-				public boolean accept(File dir, String name) {
-					return name != null && name.endsWith(".xml");
-				}
-			});
 			// --- Einlesen der Dateien
-			for(File disConfigFile : files) {
+			for(File disConfigFile : selectallxmlfiles(new File("./config/disciplines"))) {
 				System.out.println("Lese Konfigurationsdatei: '" + disConfigFile.getCanonicalPath() + "'");
 				DISCIPLINE dis = (DISCIPLINE) unmarshaller.unmarshal(disConfigFile);
-				DISCIPLINES.put(dis.getName(), dis);
+				Map<String, DISCIPLINE> dis2 = DISCIPLINES.get(dis.getRulesetversion());
+				if( dis2 == null ) {
+					dis2 = new TreeMap<String, DISCIPLINE>();
+					DISCIPLINES.put(dis.getRulesetversion(),dis2);
+				}
+				dis2.put(dis.getName(), dis);
 			}
 
 			// capabilities laden
 			// --- Bestimmen aller Dateien im Unterordner 'capabilities'
-			files = new File("./config/capabilities").listFiles(new FilenameFilter() {
-				public boolean accept(File dir, String name) {
-					return name != null && name.endsWith(".xml");
-				}
-			});
 			// --- Einlesen der Dateien
-			CAPABILITIES=new CAPABILITIES();
-			CAPABILITIES.setLang(LANGUAGE);
-			for(File capa : files) {
+			CAPABILITIES=new ArrayList<CAPABILITIES>();
+			for(File capa : selectallxmlfiles(new File("./config/capabilities"))) {
 				System.out.print("Reading config file '" + capa.getCanonicalPath() + "' ...");
-				CAPABILITIES c = (CAPABILITIES) unmarshaller.unmarshal(capa);
-				if( c == null ) { System.out.println(" parse error."); continue; }
-				if( c.getLang().equals(LANGUAGE) ) {
-					CAPABILITIES.getSKILLOrTALENT().addAll(c.getSKILLOrTALENT());
-					System.out.println(" done.");
-				} else {
-					System.out.println(" skipped. Wrong language: "+c.getLang().value()+" != "+LANGUAGE.value() );
+				CAPABILITIES c1 = (CAPABILITIES) unmarshaller.unmarshal(capa);
+				if( c1 == null ) { System.out.println(" parse error."); continue; }
+				boolean notfound=true;
+				for( CAPABILITIES c2 : CAPABILITIES ) {
+					if( c2.getLang().equals(c1.getLang()) && c2.getRulesetversion().equals(c1.getRulesetversion()) ){
+						notfound=false;
+						c2.getSKILLOrTALENT().addAll(c1.getSKILLOrTALENT());
+					}
 				}
+				if( notfound ) CAPABILITIES.add(c1);
+				System.out.println(" done.");
 			}
 
 			// spells laden
 			// --- Bestimmen aller Dateien im Unterordner 'spells'
-			files = new File("./config/spells").listFiles(new FilenameFilter() {
-				public boolean accept(File dir, String name) {
-					return name != null && name.endsWith(".xml");
-				}
-			});
 			// --- Einlesen der Dateien
 			SPELLS=new SPELLS();
 			SPELLS.setLang(LANGUAGE);
 			SPELLDESCRIPTIONS=new SPELLDESCRIPTIONS();
 			SPELLDESCRIPTIONS.setLang(LANGUAGE);
-			for(File spells : files) {
+			for(File spells : selectallxmlfiles(new File("./config/spells"))) {
 				System.out.print("Reading config file '" + spells.getCanonicalPath() + "' ...");
 				SPELLS s = (SPELLS) unmarshaller.unmarshal(spells);
 				if( s == null ) { System.out.println(" parse error."); continue; }
@@ -645,15 +711,10 @@ public class ApplicationProperties {
 
 			// knacks laden
 			// --- Bestimmen aller Dateien im Unterordner 'knacks'
-			files = new File("./config/knacks").listFiles(new FilenameFilter() {
-				public boolean accept(File dir, String name) {
-					return name != null && name.endsWith(".xml");
-				}
-			});
 			// --- Einlesen der Dateien
 			KNACKS=new KNACKS();
 			KNACKS.setLang(LANGUAGE);
-			for(File knacks : files) {
+			for(File knacks : selectallxmlfiles(new File("./config/knacks"))) {
 				System.out.print("Reading config file '" + knacks.getCanonicalPath() + "' ...");
 				KNACKS k = (KNACKS) unmarshaller.unmarshal(knacks);
 				if( k == null ) { System.out.println(" parse error."); continue; }
@@ -668,15 +729,10 @@ public class ApplicationProperties {
 
 			// itemstore laden
 			// --- Bestimmen aller Dateien im Unterordner 'disciplines'
-			files = new File("./config/itemstore").listFiles(new FilenameFilter() {
-				public boolean accept(File dir, String name) {
-					return name != null && name.endsWith(".xml");
-				}
-			});
 			// --- Einlesen der Dateien
 			ITEMS=new ITEMS();
 			ITEMS.setLang(LANGUAGE);
-			for(File items : files) {
+			for(File items : selectallxmlfiles(new File("./config/itemstore"))) {
 				System.out.println("Reading config file '" + items.getCanonicalPath() + "' ...");
 				ITEMS i = (ITEMS) unmarshaller.unmarshal(items);
 				if( i == null ) { System.out.println(" parse error."); continue; }
@@ -705,13 +761,8 @@ public class ApplicationProperties {
 
 			// randomcharactertemplates laden
 			// --- Bestimmen aller Dateien im Unterordner 'randomcharactertemplates'
-			files = new File("./config/randomcharactertemplates").listFiles(new FilenameFilter() {
-				public boolean accept(File dir, String name) {
-					return name != null && name.endsWith(".xml");
-				}
-			});
 			// --- Einlesen der Dateien
-			for(File configFile : files) {
+			for(File configFile : selectallxmlfiles(new File("./config/randomcharactertemplates"))) {
 				System.out.println("Lese Konfigurationsdatei: '" + configFile.getCanonicalPath() + "'");
 				EDRANDOMCHARACTERTEMPLATE t = (EDRANDOMCHARACTERTEMPLATE) unmarshaller.unmarshal(configFile);
 				if( t.getLang().equals(LANGUAGE) ) RANDOMCHARACTERTEMPLATES.put(t.getName(), t);
@@ -743,6 +794,7 @@ public class ApplicationProperties {
 		} catch (JAXBException e) {
 			e.printStackTrace();
 		}
+		//checktranslation();
 	}
 
 	public static boolean fillSpellDescription(SPELLDESCRIPTIONS spelldescriptions, SPELLS spelllist) {
@@ -761,5 +813,78 @@ public class ApplicationProperties {
 			}
 		}
 		return modified;
+	}
+
+	public static List<File> selectallxmlfiles(File folder) {
+		List<File> files = new ArrayList<File>();
+		List<File> folders = new ArrayList<File>();
+		for( File file : folder.listFiles() ) {
+			String name=file.getName();
+			if( name == null ) continue;
+			if( file.isFile() && name.endsWith(".xml") ) files.add(file);
+			else if( file.isDirectory() ) folders.add(file);
+		}
+		for( File dir : folders ) files.addAll(selectallxmlfiles(dir));
+		return files;
+	}
+
+	private void checktranslation() {
+		for( CAPABILITIES c : CAPABILITIES ) {
+			RulesetversionType rsv = c.getRulesetversion();
+			LanguageType lang = c.getLang();
+			HashMap<String,List<TranslationlabelType>> translation = new HashMap<String,List<TranslationlabelType>>();
+			HashMap<String,Integer> count = new HashMap<String,Integer>();
+			for( TRANSLATIONS t : TRANSLATIONS ) {
+				if( t.getRulesetversion().equals(rsv) ) {
+					for( TRANSLATIONType i : t.getCAPABILITY() ) {
+						for( TranslationlabelType j : i.getLABEL() ) {
+							if( j.getLang().equals(lang) ) {
+								translation.put(j.getValue(), i.getLABEL());
+								count.put(j.getValue(), 0);
+							}
+						}
+					}
+				}
+			}
+			for( JAXBElement<CAPABILITYType> t : c.getSKILLOrTALENT() ) {
+				String name = t.getValue().getName();
+				List<TranslationlabelType> labels = translation.get(name);
+				if( labels == null ) {
+					count.put(name, -1);
+				} else {
+					count.put(name,count.get(name)+1);
+				}
+			}
+			List <String> keys = new ArrayList<String>(Arrays.asList(count.keySet().toArray(new String[0])));
+			Collections.sort(keys);
+			System.out.println("The following translation were used:");
+			for( String key : keys ) {
+				if( count.get(key) > 0 ) {
+					System.out.println("	<CAPABILITY>");
+					for( TranslationlabelType ll : translation.get(key) ) {
+						System.out.println("		<LABEL lang=\""+ll.getLang().value()+"\">"+ll.getValue()+"</LABEL>");
+					}
+					System.out.println("	</CAPABILITY>");
+				}
+			}
+			System.out.println("The following translation were not used:");
+			for( String key : keys ) {
+				if( count.get(key) == 0 ) {
+					System.out.println("	<CAPABILITY>");
+					for( TranslationlabelType ll : translation.get(key) ) {
+						System.out.println("		<LABEL lang=\""+ll.getLang().value()+"\">"+ll.getValue()+"</LABEL>");
+					}
+					System.out.println("	</CAPABILITY>");
+				}
+			}
+			System.out.println("The following translation were missing:");
+			for( String key : keys ) {
+				if( count.get(key) < 0 ) {
+					System.out.println("	<CAPABILITY>");
+					System.out.println("		<LABEL lang=\""+lang.value()+"\">"+key+"</LABEL>");
+					System.out.println("	</CAPABILITY>");
+				}
+			}
+		}
 	}
 }

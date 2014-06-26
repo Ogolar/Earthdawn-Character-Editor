@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xs:schema elementFormDefault="qualified" targetNamespace="http://earthdawn.com/translation" xmlns="http://earthdawn.com/translation" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:edt="http://earthdawn.com/datatypes">
+	<xs:import namespace="http://earthdawn.com/datatypes" schemaLocation="earthdawndatatypes.xsd"/>
+	<xs:complexType name="translationlabel_type">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute name="lang" type="edt:language_type" use="required"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<xs:complexType name="TRANSLATION_type">
+		<xs:choice maxOccurs="unbounded">
+			<xs:element maxOccurs="unbounded" minOccurs="0" name="LABEL" type="translationlabel_type"/>
+		</xs:choice>
+	</xs:complexType>
+	<xs:element name="TRANSLATIONS">
+		<xs:complexType>
+			<xs:sequence maxOccurs="1" minOccurs="1">
+				<xs:element maxOccurs="unbounded" minOccurs="0" name="CAPABILITY" type="TRANSLATION_type"/>
+				<xs:element maxOccurs="unbounded" minOccurs="0" name="SPELL" type="TRANSLATION_type"/>
+				<xs:element maxOccurs="unbounded" minOccurs="0" name="DISCIPLINE" type="TRANSLATION_type"/>
+				<xs:element maxOccurs="unbounded" minOccurs="0" name="ITEM" type="TRANSLATION_type"/>
+			</xs:sequence>
+			<xs:attribute name="rulesetversion" type="edt:rulesetversion_type" use="required"/>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
