@@ -770,357 +770,471 @@
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Absorb Blow</LABEL>
+		<LABEL lang="de">Treffer Auffangen</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Absorb Spell</LABEL>
+		<LABEL lang="de">Zauber Auffangen</LABEL>		
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Airs of Nobility</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Ambush</LABEL>
+		<LABEL lang="de">Hinterhalt</LABEL>				
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Animal Leadership</LABEL>
+		<LABEL lang="de">Tiere Führen</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Animal Slumber</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Animate Object</LABEL>
+		<LABEL lang="de">Gegenstand Beleben</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Animated Dead</LABEL>
+		<LABEL lang="de">Leiche Beleben</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Applied Science</LABEL>
+		<LABEL lang="de">Angewandte Naturwissenschaften</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Armored Fetish</LABEL>
+		<LABEL lang="de">Gepanzerter Fetisch</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Armored Matrix</LABEL>
+		<LABEL lang="de">Gepanzerter Matrix</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Assess Community</LABEL>
+		<LABEL lang="de">***</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Astral Camouflage</LABEL>
+		<LABEL lang="de">Astrale Tarnung</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Astral Pocket</LABEL>
+		<LABEL lang="de">Astraltasche</LABEL>		
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Astral Web</LABEL>
+		<LABEL lang="de">Astralnetz</LABEL>		
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Aura Armor</LABEL>
+		<LABEL lang="de">Aurarüstung</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Aura Of Awe</LABEL>
+		<LABEL lang="de">Aura der Ehrfurcht</LABEL>		
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Bane Strike</LABEL>
+		<LABEL lang="de">Verbannender Treffer</LABEL>		
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Bardic Voice</LABEL>
+		<LABEL lang="de">Bardenstimme</LABEL>		
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Bargain With Summoned Creature</LABEL>
+		<LABEL lang="de">Feilschen mit beschworenem Wesen</LABEL>		
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Bear Mark</LABEL>
+		<LABEL lang="de">Mal Tragen</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Beast Summons</LABEL>
+		<LABEL lang="de">Bestie Herbeirufen</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Bedazzle</LABEL>
+		<LABEL lang="de">Verblenden</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Bestial Resilience</LABEL>
+		<LABEL lang="de">Tierische Härte</LABEL>		
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Bestial Toughness</LABEL>
+		<LABEL lang="de">Tierische Zähigkeit</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Bird Song</LABEL>
+		<LABEL lang="de">Vogelgesang</LABEL>		
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Blade Blur</LABEL>
+		<LABEL lang="de">Klingen Flirren</LABEL>		
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Blade Dance</LABEL>
+		<LABEL lang="de">Schwerttanz</LABEL>		
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Block Spell</LABEL>
+		<LABEL lang="de">Zauber Abblocken</LABEL>		
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Block and Counter</LABEL>
+		<LABEL lang="de">Block und Konter</LABEL>		
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Blood Guilt Weapon</LABEL>
+		<LABEL lang="de">Waffe der Blutschuld</LABEL>		
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Body Blade</LABEL>
+		<LABEL lang="de">Körperklinge</LABEL>		
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Body Control</LABEL>
+		<LABEL lang="de">Körperkontrolle</LABEL>		
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Bone Compass</LABEL>
+		<LABEL lang="de">Knochenkompass</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Buzz</LABEL>
+		<LABEL lang="de">Schwirren</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Call Mount</LABEL>
+		<LABEL lang="de">Reittier Rufen</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Call of Harrow</LABEL>
+		<LABEL lang="de">Ruf von Harrow</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Calm Beast</LABEL>
+		<LABEL lang="de">Bestie Beruhigen</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Cast Net</LABEL>
+		<LABEL lang="de">Netz Werfen</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Casting Pattern</LABEL>
+		<LABEL lang="de">Zauberstruktur</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Chameleon</LABEL>
+		<LABEL lang="de">Chamäleon</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Champion Challenge</LABEL>
+		<LABEL lang="de">Herausforderung der Besten</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Clay Skin</LABEL>
+		<LABEL lang="de">Tonhaut</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Close In</LABEL>
+		<LABEL lang="de">Reingehen</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Combo</LABEL>
+		<LABEL lang="de">Combo</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Commune</LABEL>
+		<LABEL lang="de">Zwiesprache</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Company of One</LABEL>
+		<LABEL lang="de">Begleitung des Einen</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Conceal Caravan</LABEL>
+		<LABEL lang="de">Gefährt Verbergen</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Confront Horror</LABEL>
+		<LABEL lang="de">Dämonen Entgegentreten</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Corrupt Karma</LABEL>
+		<LABEL lang="de">Karma Verderben</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Corrupt Reality</LABEL>
+		<LABEL lang="de">Realität Verderben</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Counteract</LABEL>
+		<LABEL lang="de">Entgegenwirken</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Create Fetish</LABEL>
+		<LABEL lang="de">Fetisch Erschaffen</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Create Moon Staff</LABEL>
+		<LABEL lang="de">Mondstab Erschaffen</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Create Shadow</LABEL>
+		<LABEL lang="de">Schatten Erschaffen</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Critical Hit</LABEL>
+		<LABEL lang="de">Kritischer Treffer</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Cross</LABEL>
+		<LABEL lang="de">Durchziehen</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Cursed Luck</LABEL>
+		<LABEL lang="de">Verfluchtes Glück</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Cyclone</LABEL>
+		<LABEL lang="de">Windhose</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Damage Shift</LABEL>
+		<LABEL lang="de">Schadenstransfer</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Defense</LABEL>
+		<LABEL lang="de">Verteidigung</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Detect Falsehood</LABEL>
+		<LABEL lang="de">Falschheit Erkennen</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Detect Influence</LABEL>
+		<LABEL lang="de">Einfluss Entdecken</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Develop Animal Sense</LABEL>
+		<LABEL lang="de">Tiersinne Entwickeln</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Disease</LABEL>
+		<LABEL lang="de">Krankheit</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Disguise Chest</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Displace</LABEL>
-	</CAPABILITY>
+		<LABEL lang="de">Versetzen</LABEL>
 	<CAPABILITY>
 		<LABEL lang="en">Dive Attack</LABEL>
+		<LABEL lang="de">Sturzflug</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Dominate Arrow</LABEL>
+		<LABEL lang="de">Pfeil Beherrschen</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Doom Circle</LABEL>
+		<LABEL lang="de">Kreis der Verdammnis</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Dragonfire</LABEL>
+		<LABEL lang="de">Drachenfeuer</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Dragonscales</LABEL>
+		<LABEL lang="de">Drachenschuppen</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Duel</LABEL>
+		<LABEL lang="de">Duell</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Eagle Eye</LABEL>
+		<LABEL lang="de">Adlerauge</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Earth Armor</LABEL>
+		<LABEL lang="de">Irdene Rüstung</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Earth Bond</LABEL>
+		<LABEL lang="de">Erdverbindung</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Echo Location</LABEL>
+		<LABEL lang="de">Echolot</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Effect Pattern</LABEL>
+		<LABEL lang="de">Struktur Beeinflussen</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Elemental Walk</LABEL>
+		<LABEL lang="de">Elementarwandeln</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Embrace of the Phoenix</LABEL>
+		<LABEL lang="de">Umarmung des Phoenix</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Endure Cold</LABEL>
+		<LABEL lang="de">Kälte Ertragen</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Enduring Art</LABEL>
+		<LABEL lang="de">Dauerhafte Kunst</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Engaging Dance</LABEL>
+		<LABEL lang="de">Klingentanz</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Enhanced Fetish</LABEL>
+		<LABEL lang="de">Erweiterter Fetisch</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Escape Divination</LABEL>
+		<LABEL lang="de">Fluchtweg Ahnen</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Ethereal Weapon</LABEL>
+		<LABEL lang="de">Ätherwaffe</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">False Shackles</LABEL>
+		<LABEL lang="de">Falsche Fesseln</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Feather Light</LABEL>
+		<LABEL lang="de">Federleicht</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Feign Retreat</LABEL>
+		<LABEL lang="de">Fingierter Rückzug</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Fiery Blade</LABEL>
+		<LABEL lang="de">Flammende Klinge</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">First Ring of Perfection</LABEL>
+		<LABEL lang="de">Ansatz zur Perfektion</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Flowing Blow</LABEL>
+		<LABEL lang="de">Fließender Schlag</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Free Mind</LABEL>
+		<LABEL lang="de">Freier Geist</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Freedom Search</LABEL>
+		<LABEL lang="de">Freiheitssuche</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Gain Surprise</LABEL>
+		<LABEL lang="de">Überrumpelung</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Gift of the Phoenix</LABEL>
+		<LABEL lang="de">Geschenk des Phönix</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Gliding</LABEL>
+		<LABEL lang="de">Gleiten</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Gold Sense</LABEL>
+		<LABEL lang="de">Goldgespür</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Great Kick</LABEL>
+		<LABEL lang="de">Gewaltiger Tritt</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Great Strike</LABEL>
+		<LABEL lang="de">Gewaltiger Schlag</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Guard Stance</LABEL>
+		<LABEL lang="de">***</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Guhvuul</LABEL>
+		<LABEL lang="de">***</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Heal Slave</LABEL>
+		<LABEL lang="de">***</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Heart of Freedom</LABEL>
+		<LABEL lang="de">***</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Hoard Blows</LABEL>
+		<LABEL lang="de">***</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Hook</LABEL>
+		<LABEL lang="de">***</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Howl</LABEL>
+		<LABEL lang="de">***</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Impossible Hide</LABEL>
+		<LABEL lang="de">***</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Impressive Strike</LABEL>
+		<LABEL lang="de">***</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Improvised Poultice</LABEL>
+		<LABEL lang="de">***</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Incite Mob</LABEL>
+		<LABEL lang="de">***</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Incite Stampede</LABEL>
+		<LABEL lang="de">***</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Infuse Armor</LABEL>
+		<LABEL lang="de">***</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Infuse Blade</LABEL>
+		<LABEL lang="de">***</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Infuse Weapon</LABEL>
+		<LABEL lang="de">***</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Inherited Powers</LABEL>
+		<LABEL lang="de">***</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Inner Strength</LABEL>
+		<LABEL lang="de">***</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Intimidation</LABEL>
+		<LABEL lang="de">***</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Jab</LABEL>
