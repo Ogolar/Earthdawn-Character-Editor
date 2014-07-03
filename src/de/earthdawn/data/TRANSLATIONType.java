@@ -25,9 +25,9 @@ import javax.xml.bind.annotation.XmlType;
  * &lt;complexType name="TRANSLATION_type">
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;choice maxOccurs="unbounded">
- *         &lt;element name="LABEL" type="{http://earthdawn.com/translation}translationlabel_type" maxOccurs="unbounded" minOccurs="0"/>
- *       &lt;/choice>
+ *       &lt;sequence>
+ *         &lt;element name="LABEL" type="{http://earthdawn.com/translation}translationlabel_type" maxOccurs="unbounded"/>
+ *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
  * &lt;/complexType>
@@ -41,7 +41,7 @@ import javax.xml.bind.annotation.XmlType;
 })
 public class TRANSLATIONType {
 
-    @XmlElement(name = "LABEL")
+    @XmlElement(name = "LABEL", required = true)
     protected List<TranslationlabelType> label;
 
     /**

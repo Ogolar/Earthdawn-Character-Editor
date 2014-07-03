@@ -534,62 +534,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link OPTIONALRULESDEFAULTLANGUAGE }
-     * 
-     */
-    public OPTIONALRULESDEFAULTLANGUAGE createOPTIONALRULESDEFAULTLANGUAGE() {
-        return new OPTIONALRULESDEFAULTLANGUAGE();
-    }
-
-    /**
-     * Create an instance of {@link NAMES }
-     * 
-     */
-    public NAMES createNAMES() {
-        return new NAMES();
-    }
-
-    /**
-     * Create an instance of {@link NAMESATTRIBUTESType }
-     * 
-     */
-    public NAMESATTRIBUTESType createNAMESATTRIBUTESType() {
-        return new NAMESATTRIBUTESType();
-    }
-
-    /**
-     * Create an instance of {@link NAMESACTIONSType }
-     * 
-     */
-    public NAMESACTIONSType createNAMESACTIONSType() {
-        return new NAMESACTIONSType();
-    }
-
-    /**
-     * Create an instance of {@link NAMELANGType }
-     * 
-     */
-    public NAMELANGType createNAMELANGType() {
-        return new NAMELANGType();
-    }
-
-    /**
-     * Create an instance of {@link NAMESHORTCUTType }
-     * 
-     */
-    public NAMESHORTCUTType createNAMESHORTCUTType() {
-        return new NAMESHORTCUTType();
-    }
-
-    /**
-     * Create an instance of {@link NAMESPELLWEAVINGType }
-     * 
-     */
-    public NAMESPELLWEAVINGType createNAMESPELLWEAVINGType() {
-        return new NAMESPELLWEAVINGType();
-    }
-
-    /**
      * Create an instance of {@link NAMESTARTINGWEAPONSType }
      * 
      */
@@ -614,27 +558,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link NAMESACTIONType }
+     * Create an instance of {@link OPTIONALRULESDEFAULTLANGUAGE }
      * 
      */
-    public NAMESACTIONType createNAMESACTIONType() {
-        return new NAMESACTIONType();
-    }
-
-    /**
-     * Create an instance of {@link NAMESPELLKINDType }
-     * 
-     */
-    public NAMESPELLKINDType createNAMESPELLKINDType() {
-        return new NAMESPELLKINDType();
-    }
-
-    /**
-     * Create an instance of {@link NAMESATTRIBUTEType }
-     * 
-     */
-    public NAMESATTRIBUTEType createNAMESATTRIBUTEType() {
-        return new NAMESATTRIBUTEType();
+    public OPTIONALRULESDEFAULTLANGUAGE createOPTIONALRULESDEFAULTLANGUAGE() {
+        return new OPTIONALRULESDEFAULTLANGUAGE();
     }
 
     /**
@@ -686,30 +614,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link EDRANDOMNAME }
-     * 
-     */
-    public EDRANDOMNAME createEDRANDOMNAME() {
-        return new EDRANDOMNAME();
-    }
-
-    /**
-     * Create an instance of {@link RANDOMNAMERACEType }
-     * 
-     */
-    public RANDOMNAMERACEType createRANDOMNAMERACEType() {
-        return new RANDOMNAMERACEType();
-    }
-
-    /**
-     * Create an instance of {@link RandomnameNamesType }
-     * 
-     */
-    public RandomnameNamesType createRandomnameNamesType() {
-        return new RandomnameNamesType();
-    }
-
-    /**
      * Create an instance of {@link HELP }
      * 
      */
@@ -731,6 +635,30 @@ public class ObjectFactory {
      */
     public KNACKBASEType createKNACKBASEType() {
         return new KNACKBASEType();
+    }
+
+    /**
+     * Create an instance of {@link EDRANDOMNAME }
+     * 
+     */
+    public EDRANDOMNAME createEDRANDOMNAME() {
+        return new EDRANDOMNAME();
+    }
+
+    /**
+     * Create an instance of {@link RANDOMNAMERACEType }
+     * 
+     */
+    public RANDOMNAMERACEType createRANDOMNAMERACEType() {
+        return new RANDOMNAMERACEType();
+    }
+
+    /**
+     * Create an instance of {@link RandomnameNamesType }
+     * 
+     */
+    public RandomnameNamesType createRandomnameNamesType() {
+        return new RandomnameNamesType();
     }
 
     /**
@@ -974,11 +902,59 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link NAMESATTRIBUTESType }
+     * 
+     */
+    public NAMESATTRIBUTESType createNAMESATTRIBUTESType() {
+        return new NAMESATTRIBUTESType();
+    }
+
+    /**
+     * Create an instance of {@link NAMESACTIONSType }
+     * 
+     */
+    public NAMESACTIONSType createNAMESACTIONSType() {
+        return new NAMESACTIONSType();
+    }
+
+    /**
      * Create an instance of {@link TRANSLATIONType }
      * 
      */
     public TRANSLATIONType createTRANSLATIONType() {
         return new TRANSLATIONType();
+    }
+
+    /**
+     * Create an instance of {@link NAMESPELLWEAVINGType }
+     * 
+     */
+    public NAMESPELLWEAVINGType createNAMESPELLWEAVINGType() {
+        return new NAMESPELLWEAVINGType();
+    }
+
+    /**
+     * Create an instance of {@link NAMESACTIONType }
+     * 
+     */
+    public NAMESACTIONType createNAMESACTIONType() {
+        return new NAMESACTIONType();
+    }
+
+    /**
+     * Create an instance of {@link NAMESPELLKINDType }
+     * 
+     */
+    public NAMESPELLKINDType createNAMESPELLKINDType() {
+        return new NAMESPELLKINDType();
+    }
+
+    /**
+     * Create an instance of {@link NAMESATTRIBUTEType }
+     * 
+     */
+    public NAMESATTRIBUTEType createNAMESATTRIBUTEType() {
+        return new NAMESATTRIBUTEType();
     }
 
     /**
