@@ -1166,210 +1166,255 @@
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Guard Stance</LABEL>
-		<LABEL lang="de">***</LABEL>
+		<LABEL lang="de">Verteidigungshaltung</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Guhvuul</LABEL>
-		<LABEL lang="de">***</LABEL>
+		<LABEL lang="de">Guhvuul</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Heal Slave</LABEL>
-		<LABEL lang="de">***</LABEL>
+		<LABEL lang="de">Sklaven Heilen</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Heart of Freedom</LABEL>
-		<LABEL lang="de">***</LABEL>
+		<LABEL lang="de">Herz der Freiheit</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Hoard Blows</LABEL>
-		<LABEL lang="de">***</LABEL>
+		<LABEL lang="de">Schläge Horten</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Hook</LABEL>
-		<LABEL lang="de">***</LABEL>
+		<LABEL lang="de">Festhacken</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Howl</LABEL>
-		<LABEL lang="de">***</LABEL>
+		<LABEL lang="de">Heulen</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Impossible Hide</LABEL>
-		<LABEL lang="de">***</LABEL>
+		<LABEL lang="de">Unmögliches Versteck</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Impressive Strike</LABEL>
-		<LABEL lang="de">***</LABEL>
+		<LABEL lang="de">Beeindruckender Schlag</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Improvised Poultice</LABEL>
-		<LABEL lang="de">***</LABEL>
+		<LABEL lang="de">Improvisierter Salbenverband</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Incite Mob</LABEL>
-		<LABEL lang="de">***</LABEL>
+		<LABEL lang="de">Mob Aufwiegeln</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Incite Stampede</LABEL>
-		<LABEL lang="de">***</LABEL>
+		<LABEL lang="de">Stampede</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Infuse Armor</LABEL>
-		<LABEL lang="de">***</LABEL>
+		<LABEL lang="de">Rüstung Verstärken</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Infuse Blade</LABEL>
-		<LABEL lang="de">***</LABEL>
+		<LABEL lang="de">Klinge Verstärken</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Infuse Weapon</LABEL>
-		<LABEL lang="de">***</LABEL>
+		<LABEL lang="de">Waffe Verstärken</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Inherited Powers</LABEL>
-		<LABEL lang="de">***</LABEL>
+		<LABEL lang="de">Ererbte Fähigkeit</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Inner Strength</LABEL>
-		<LABEL lang="de">***</LABEL>
+		<LABEL lang="de">Innere Stärke</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Intimidation</LABEL>
-		<LABEL lang="de">***</LABEL>
+		<LABEL lang="de">Einschüchterung</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Jab</LABEL>
+		<LABEL lang="de">schneller Schlag</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Joint Lock</LABEL>
+		<LABEL lang="de">Gelenkhebel</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Karma Cancel</LABEL>
+		<LABEL lang="de">Karmablockade</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Kiai</LABEL>
+		<LABEL lang="de">Kiai</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Kip</LABEL>
+		<LABEL lang="de">Kip</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Knockout</LABEL>
+		<LABEL lang="de">Knockout</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Legendary Blades</LABEL>
+		<LABEL lang="de">Legendäre Klingen</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Lightning Born</LABEL>
+		<LABEL lang="de">Blitzgeboren</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Lightning Combo</LABEL>
+		<LABEL lang="de">***</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Lion Spirit</LABEL>
+		<LABEL lang="de">***</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Liquid Prison</LABEL>
+		<LABEL lang="de">***</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Manifest Beast</LABEL>
+		<LABEL lang="de">***</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Matrix Strike</LABEL>
+		<LABEL lang="de">***</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Meditate</LABEL>
+		<LABEL lang="de">***</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Memorize Image</LABEL>
+		<LABEL lang="de">***</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Metal Ward</LABEL>
+		<LABEL lang="de">***</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Mind Armor</LABEL>
+		<LABEL lang="de">***</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Mind Blade</LABEL>
+		<LABEL lang="de">***</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Mind Hand</LABEL>
+		<LABEL lang="de">***</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Mind Wave</LABEL>
+		<LABEL lang="de">***</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Missile Path</LABEL>
+		<LABEL lang="de">***</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Missile Twister</LABEL>
+		<LABEL lang="de">***</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Moon Ray</LABEL>
+		<LABEL lang="de">***</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Moon Shield</LABEL>
+		<LABEL lang="de">***</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Moving Earth</LABEL>
+		<LABEL lang="de">***</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Multi-Charge</LABEL>
+		<LABEL lang="de">***</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Multi-Shot</LABEL>
+		<LABEL lang="de">***</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Multi-Strike</LABEL>
+		<LABEL lang="de">***</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Multi-Tongue</LABEL>
+		<LABEL lang="de">***</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Multi-Weaving</LABEL>
+		<LABEL lang="de">***</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Netherwalk</LABEL>
+		<LABEL lang="de">***</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Past Tongues</LABEL>
+		<LABEL lang="de">***</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Path of the Righteous</LABEL>
+		<LABEL lang="de">***</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Phantom Strike</LABEL>
+		<LABEL lang="de">***</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Pin</LABEL>
+		<LABEL lang="de">***</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Plant Shelter</LABEL>
+		<LABEL lang="de">***</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Prison Call</LABEL>
+		<LABEL lang="de">***</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Purge Pattern</LABEL>
+		<LABEL lang="de">***</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Questor</LABEL>
+		<LABEL lang="de">***</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Quick Shot</LABEL>
+		<LABEL lang="de">***</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Rally</LABEL>
+		<LABEL lang="de">***</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Range Pattern</LABEL>
+		<LABEL lang="de">***</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Rapid Strike</LABEL>
+		<LABEL lang="de">***</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Regeneration</LABEL>
+		<LABEL lang="de">***</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Reshape Object</LABEL>
+		<LABEL lang="de">***</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
 		<LABEL lang="en">Resist Pain</LABEL>
