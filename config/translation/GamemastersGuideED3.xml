@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<TRANSLATIONS rulesetversion="ED3" xmlns="http://earthdawn.com/translation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://earthdawn.com/translation ../earthdawntranslation.xsd">
+
+	<CAPABILITY>
+		<LABEL lang="en">Bargain With Summoned Creature</LABEL>
+		<LABEL lang="de">Feilschen mit beschworenem Wesen</LABEL>		
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Gain Surprise</LABEL>
+		<LABEL lang="de">Überrumpelung</LABEL>
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Mind Wave</LABEL>
+		<LABEL lang="de">***</LABEL>
+	</CAPABILITY>	
+</TRANSLATIONS>
