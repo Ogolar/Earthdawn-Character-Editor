@@ -1,4 +1,135 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <TRANSLATIONS rulesetversion="ED3" xmlns="http://earthdawn.com/translation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://earthdawn.com/translation ../earthdawntranslation.xsd">
-
+	<CAPABILITY>
+		<LABEL lang="en">Armored Fetish</LABEL>
+		<LABEL lang="de">Gepanzerter Fetisch</LABEL>
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Bear Mark</LABEL>
+		<LABEL lang="de">Mal Tragen</LABEL>
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Bird Song</LABEL>
+		<LABEL lang="de">Vogelgesang</LABEL>		
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Body Control</LABEL>
+		<LABEL lang="de">Körperkontrolle</LABEL>		
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Buzz</LABEL>
+		<LABEL lang="de">Schwirren</LABEL>
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Cast Net</LABEL>
+		<LABEL lang="de">Netz Werfen</LABEL>
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Clay Skin</LABEL>
+		<LABEL lang="de">Tonhaut</LABEL>
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Create Fetish</LABEL>
+		<LABEL lang="de">Fetisch Erschaffen</LABEL>
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Dive Attack</LABEL>
+		<LABEL lang="de">Sturzflug</LABEL>
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Earth Bond</LABEL>
+		<LABEL lang="de">Erdverbindung</LABEL>
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Enhanced Fetish</LABEL>
+		<LABEL lang="de">Erweiterter Fetisch</LABEL>
+	</CAPABILITY>	
+	<CAPABILITY>
+		<LABEL lang="en">Engaging Dance</LABEL>
+		<LABEL lang="de">Klingentanz</LABEL>
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">False Shackles</LABEL>
+		<LABEL lang="de">Falsche Fesseln</LABEL>
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Fast Grab</LABEL>
+		<LABEL lang="de">Schnelles Zupacken</LABEL>
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Free Mind</LABEL>
+		<LABEL lang="de">Freier Geist</LABEL>
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Freedom Search</LABEL>
+		<LABEL lang="de">Freiheitssuche</LABEL>
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Gliding</LABEL>
+		<LABEL lang="de">Gleiten</LABEL>
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Heal Slave</LABEL>
+		<LABEL lang="de">Sklaven Heilen</LABEL>
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Heart of Freedom</LABEL>
+		<LABEL lang="de">Herz der Freiheit</LABEL>
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Hoard Blows</LABEL>
+		<LABEL lang="de">Schläge Horten</LABEL>
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Missile Path</LABEL>
+		<LABEL lang="de">Schussfeld</LABEL>
+	</CAPABILITY>	
+	<CAPABILITY>
+		<LABEL lang="en">Pilot Boat</LABEL>
+		<LABEL lang="de">Boot Steuern</LABEL>
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Prison Call</LABEL>
+		<LABEL lang="de">Gefängnisruf</LABEL>
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Read River</LABEL>
+		<LABEL lang="de">Fluss Lesen</LABEL>
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Shared Fetish</LABEL>
+		<LABEL lang="de">Summenfetisch</LABEL>		
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Shout of Jusice</LABEL>
+		<LABEL lang="de">Ruf der Gerechtigkeit</LABEL>		
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Spell Fetish</LABEL>
+		<LABEL lang="de">Zauberfetisch</LABEL>		
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Suppress Influence</LABEL>
+		<LABEL lang="de">Einfluss Unterdrücken</LABEL>
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Swimming</LABEL>
+		<LABEL lang="de">Schwimmen</LABEL>
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Tail Dance</LABEL>
+		<LABEL lang="de">Schwanztanz</LABEL>		
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Wind Dance</LABEL>
+		<LABEL lang="de">Windtanz</LABEL>
+	</CAPABILITY>	
+	<CAPABILITY>
+		<LABEL lang="en">Woodspeak</LABEL>
+		<LABEL lang="de">Waldsprache</LABEL>		
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Woodwalk</LABEL>
+		<LABEL lang="de">Waldwandeln</LABEL>		
+	</CAPABILITY>	
 </TRANSLATIONS>

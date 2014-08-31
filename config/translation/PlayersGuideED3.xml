@@ -8,15 +8,24 @@
 	<VERSATILITY>
 		<LABEL lang="de">Vielseitigkeit</LABEL>
 		<LABEL lang="en">Versatility</LABEL>
-	</VERSATILITY>	
+	</VERSATILITY>
+	
 	<CAPABILITY>
 		<LABEL lang="en">Abate Curse</LABEL>
 		<LABEL lang="de">Fluch Aufheben</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
+		<LABEL lang="en">Absorb Blow</LABEL>
+		<LABEL lang="de">Treffer Auffangen</LABEL>
+	</CAPABILITY>	
+	<CAPABILITY>
 		<LABEL lang="en">Acrobatic Strike</LABEL>
 		<LABEL lang="de">Akrobatischer Angriff</LABEL>
 	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Acting</LABEL>
+		<LABEL lang="de">Schauspielern</LABEL>
+	</CAPABILITY>	
 	<CAPABILITY>
 		<LABEL lang="en">Air Dance</LABEL>
 		<LABEL lang="de">Lufttanz</LABEL>
@@ -30,6 +39,10 @@
 		<LABEL lang="de">Wispern</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
+		<LABEL lang="en">Alchemy</LABEL>
+		<LABEL lang="de">Alchemie</LABEL>
+	</CAPABILITY>	
+	<CAPABILITY>
 		<LABEL lang="en">Animal Bond</LABEL>
 		<LABEL lang="de">Tierfreundschaft</LABEL>
 	</CAPABILITY>
@@ -37,6 +50,10 @@
 		<LABEL lang="en">Animal Companion Durability</LABEL>
 		<LABEL lang="de">Unempfindlichkeit (Tiergefährte)</LABEL>
 	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Animal Handling</LABEL>
+		<LABEL lang="de">Tierbeherrschung</LABEL>
+	</CAPABILITY>	
 	<CAPABILITY>
 		<LABEL lang="en">Animal Possession</LABEL>
 		<LABEL lang="de">Mentale Tierkontrolle</LABEL>
@@ -61,6 +78,14 @@
 		<LABEL lang="en">Armor Mount</LABEL>
 		<LABEL lang="de">Reittier Panzern</LABEL>
 	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Artisan</LABEL>
+		<LABEL lang="de">Kunsthandwerk</LABEL>
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Artist</LABEL>
+		<LABEL lang="de">Bildende Kunst</LABEL>
+	</CAPABILITY>	
 	<CAPABILITY>
 		<LABEL lang="en">Astral Sight</LABEL>
 		<LABEL lang="de">Astralsicht</LABEL>
@@ -102,6 +127,10 @@
 		<LABEL lang="de">Buchwissen Erneuern</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
+		<LABEL lang="en">Bribery</LABEL>
+		<LABEL lang="de">Bestechung</LABEL>
+	</CAPABILITY>	
+	<CAPABILITY>
 		<LABEL lang="en">Borrow Sense</LABEL>
 		<LABEL lang="de">Tierische Sinne</LABEL>
 	</CAPABILITY>
@@ -142,6 +171,18 @@
 		<LABEL lang="de">Konversation</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
+		<LABEL lang="en">Craft Armor</LABEL>
+		<LABEL lang="de">Rüstung Herstellen</LABEL>
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Craft Weapon</LABEL>
+		<LABEL lang="de">Waffe Herstellen</LABEL>
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Craftsman</LABEL>
+		<LABEL lang="de">Handwerk</LABEL>
+	</CAPABILITY>	
+	<CAPABILITY>
 		<LABEL lang="en">Creature Analysis</LABEL>
 		<LABEL lang="de">Tieranalyse</LABEL>
 	</CAPABILITY>
@@ -181,6 +222,10 @@
 		<LABEL lang="en">Disarm Trap</LABEL>
 		<LABEL lang="de">Fallen Entschärfen</LABEL>
 	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Disguise</LABEL>
+		<LABEL lang="de">Verkleiden</LABEL>
+	</CAPABILITY>	
 	<CAPABILITY>
 		<LABEL lang="en">Disguise Self</LABEL>
 		<LABEL lang="de">Magische Maske</LABEL>
@@ -236,6 +281,10 @@
 	<CAPABILITY>
 		<LABEL lang="en">Enhanced Matrix</LABEL>
 		<LABEL lang="de">Erweiterte Matrix</LABEL>
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Entertainer</LABEL>
+		<LABEL lang="de">Unterhaltung</LABEL>
 	</CAPABILITY>	
 	<CAPABILITY>
 		<LABEL lang="en">Etiquette</LABEL>
@@ -264,7 +313,7 @@
 	<CAPABILITY>
 		<LABEL lang="en">Fearsome Charge</LABEL>
 		<LABEL lang="de">Furchterregender Sturmangriff</LABEL>
-	</CAPABILITY>
+	</CAPABILITY>	
 	<CAPABILITY>
 		<LABEL lang="en">Fire Heal</LABEL>
 		<LABEL lang="de">Heilendes Feuer</LABEL>
@@ -278,9 +327,21 @@
 		<LABEL lang="de">Erster Eindruck</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
+		<LABEL lang="en">Fishing</LABEL>
+		<LABEL lang="de">Fischen</LABEL>
+	</CAPABILITY>	
+	<CAPABILITY>
 		<LABEL lang="en">Flame Arrow</LABEL>
 		<LABEL lang="de">Brandpfeil</LABEL>
 	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Flirting</LABEL>
+		<LABEL lang="de">Flirten</LABEL>
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Forgery</LABEL>
+		<LABEL lang="de">Fälschen</LABEL>
+	</CAPABILITY>	
 	<CAPABILITY>
 		<LABEL lang="en">Forge Armor</LABEL>
 		<LABEL lang="de">Rüstung Schmieden</LABEL>
@@ -334,6 +395,10 @@
 		<LABEL lang="de">Faden Halten</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
+		<LABEL lang="en">Hunting</LABEL>
+		<LABEL lang="de">Jagen</LABEL>
+	</CAPABILITY>	
+	<CAPABILITY>
 		<LABEL lang="en">Hypnotize</LABEL>
 		<LABEL lang="de">Hypnotisieren</LABEL>
 	</CAPABILITY>
@@ -357,6 +422,10 @@
 		<LABEL lang="en">Karma Ritual</LABEL>
 		<LABEL lang="de">Karmaritual</LABEL>
 	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Knowledge</LABEL>
+		<LABEL lang="de">Wissen</LABEL>
+	</CAPABILITY>	
 	<CAPABILITY>
 		<LABEL lang="en">Lasting Impression</LABEL>
 		<LABEL lang="de">Bleibender Eindruck</LABEL>
@@ -393,6 +462,10 @@
 		<LABEL lang="en">Maneuver</LABEL>
 		<LABEL lang="de">Manövrieren</LABEL>
 	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Mapmaking</LABEL>
+		<LABEL lang="de">Karten Zeichnen</LABEL>
+	</CAPABILITY>	
 	<CAPABILITY>
 		<LABEL lang="en">Melee Weapons</LABEL>
 		<LABEL lang="de">Nahkampfwaffen</LABEL>
@@ -436,6 +509,10 @@
 	<CAPABILITY>
 		<LABEL lang="en">Performance</LABEL>
 		<LABEL lang="de">Vorführung</LABEL>
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Physician</LABEL>
+		<LABEL lang="de">Arzt</LABEL>
 	</CAPABILITY>	
 	<CAPABILITY>
 		<LABEL lang="en">Picking Pockets</LABEL>
@@ -466,6 +543,10 @@
 		<LABEL lang="de">Starrsinn</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
+		<LABEL lang="en">Rhetoric</LABEL>
+		<LABEL lang="de">Rhetorik</LABEL>
+	</CAPABILITY>	
+	<CAPABILITY>
 		<LABEL lang="en">Riposte</LABEL>
 		<LABEL lang="de">Riposte</LABEL>
 	</CAPABILITY>
@@ -473,6 +554,10 @@
 		<LABEL lang="en">Safe Path</LABEL>
 		<LABEL lang="de">Sicherer Pfad</LABEL>
 	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Sailing</LABEL>
+		<LABEL lang="de">Segeln</LABEL>
+	</CAPABILITY>	
 	<CAPABILITY>
 		<LABEL lang="en">Search</LABEL>
 		<LABEL lang="de">Suchen</LABEL>
@@ -489,6 +574,10 @@
 		<LABEL lang="en">Second Weapon</LABEL>
 		<LABEL lang="de">Zweitwaffe</LABEL>
 	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Seduction</LABEL>
+		<LABEL lang="de">Verführung</LABEL>
+	</CAPABILITY>	
 	<CAPABILITY>
 		<LABEL lang="en">Sense Danger</LABEL>
 		<LABEL lang="de">Gefahr Spüren</LABEL>
@@ -561,6 +650,10 @@
 		<LABEL lang="en">Stopping Aim</LABEL>
 		<LABEL lang="de">Bannmarkierung</LABEL>
 	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Streetwise</LABEL>
+		<LABEL lang="de">Gassenwissen</LABEL>
+	</CAPABILITY>	
 	<CAPABILITY>
 		<LABEL lang="en">Summon</LABEL>
 		<LABEL lang="de">Beschwören</LABEL>

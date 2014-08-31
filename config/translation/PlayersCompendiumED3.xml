@@ -6,6 +6,10 @@
 		<LABEL lang="de">Tiere Führen</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
+		<LABEL lang="en">Animated Dead</LABEL>
+		<LABEL lang="de">Leiche Beleben</LABEL>
+	</CAPABILITY>	
+	<CAPABILITY>
 		<LABEL lang="en">Animate Object</LABEL>
 		<LABEL lang="de">Gegenstand Beleben</LABEL>
 	</CAPABILITY>

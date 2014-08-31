@@ -1,4 +1,283 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <TRANSLATIONS rulesetversion="ED3" xmlns="http://earthdawn.com/translation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://earthdawn.com/translation ../earthdawntranslation.xsd">
-
+	<CAPABILITY>
+		<LABEL lang="en">Absorb Spell</LABEL>
+		<LABEL lang="de">Zauber Auffangen</LABEL>		
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Ambush</LABEL>
+		<LABEL lang="de">Hinterhalt</LABEL>				
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Beast Summons</LABEL>
+		<LABEL lang="de">Bestie Herbeirufen</LABEL>
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Bedazzle</LABEL>
+		<LABEL lang="de">Verblenden</LABEL>
+	</CAPABILITY>	
+	<CAPABILITY>
+		<LABEL lang="en">Blade Blur</LABEL>
+		<LABEL lang="de">Klingen Flirren</LABEL>		
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Blade Dance</LABEL>
+		<LABEL lang="de">Schwerttanz</LABEL>		
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Block and Counter</LABEL>
+		<LABEL lang="de">Block und Konter</LABEL>		
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Block Spell</LABEL>
+		<LABEL lang="de">Zauber Abblocken</LABEL>		
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Calm Beast</LABEL>
+		<LABEL lang="de">Bestie Beruhigen</LABEL>
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Close In</LABEL>
+		<LABEL lang="de">Reingehen</LABEL>
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Combo</LABEL>
+		<LABEL lang="de">Combo</LABEL>
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Commune</LABEL>
+		<LABEL lang="de">Zwiesprache</LABEL>
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Company of One</LABEL>
+		<LABEL lang="de">Begleitung des Einen</LABEL>
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Conceal Caravan</LABEL>
+		<LABEL lang="de">Gefährt Verbergen</LABEL>
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Counteract</LABEL>
+		<LABEL lang="de">Entgegenwirken</LABEL>
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Create Moon Staff</LABEL>
+		<LABEL lang="de">Mondstab Erschaffen</LABEL>
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Cross</LABEL>
+		<LABEL lang="de">Durchziehen</LABEL>
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Cyclone</LABEL>
+		<LABEL lang="de">Windhose</LABEL>
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Disguise Chest</LABEL>
+		<LABEL lang="de">Truhe Maskieren</LABEL>
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Doom Circle</LABEL>
+		<LABEL lang="de">Kreis der Verdammnis</LABEL>
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Dragonfire</LABEL>
+		<LABEL lang="de">Drachenfeuer</LABEL>
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Dragonscales</LABEL>
+		<LABEL lang="de">Drachenschuppen</LABEL>
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Duel</LABEL>
+		<LABEL lang="de">Duell</LABEL>
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Embrace of the Phoenix</LABEL>
+		<LABEL lang="de">Umarmung des Phoenix</LABEL>
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Feather Light</LABEL>
+		<LABEL lang="de">Federleicht</LABEL>
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Feign Retreat</LABEL>
+		<LABEL lang="de">Fingierter Rückzug</LABEL>
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Fiery Blade</LABEL>
+		<LABEL lang="de">Flammende Klinge</LABEL>
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Flowing Blow</LABEL>
+		<LABEL lang="de">Fließender Schlag</LABEL>
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Gift of the Phoenix</LABEL>
+		<LABEL lang="de">Geschenk des Phönix</LABEL>
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Great Kick</LABEL>
+		<LABEL lang="de">Gewaltiger Tritt</LABEL>
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Great Strike</LABEL>
+		<LABEL lang="de">Gewaltiger Schlag</LABEL>
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Guard Stance</LABEL>
+		<LABEL lang="de">Verteidigungshaltung</LABEL>
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Hook</LABEL>
+		<LABEL lang="de">Festhacken</LABEL>
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Improvised Poultice</LABEL>
+		<LABEL lang="de">Improvisierter Salbenverband</LABEL>
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Inherited Powers</LABEL>
+		<LABEL lang="de">Ererbte Fähigkeit</LABEL>
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Inner Strength</LABEL>
+		<LABEL lang="de">Innere Stärke</LABEL>
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Jab</LABEL>
+		<LABEL lang="de">Schneller Schlag</LABEL>
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Joint Lock</LABEL>
+		<LABEL lang="de">Gelenkhebel</LABEL>
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Kiai</LABEL>
+		<LABEL lang="de">Kiai</LABEL>
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Kip</LABEL>
+		<LABEL lang="de">Kip</LABEL>
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Knockout</LABEL>
+		<LABEL lang="de">Knockout</LABEL>
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Legendary Blades</LABEL>
+		<LABEL lang="de">Legendäre Klingen</LABEL>
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Lightning Born</LABEL>
+		<LABEL lang="de">Blitzgeboren</LABEL>
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Lightning Combo</LABEL>
+		<LABEL lang="de">Blitzschnelle Kombination</LABEL>
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Liquid Prison</LABEL>
+		<LABEL lang="de">Flüssiges Gefängnis</LABEL>
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Manifest Beast</LABEL>
+		<LABEL lang="de">Tier Manifestieren</LABEL>
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Meditate</LABEL>
+		<LABEL lang="de">Meditieren</LABEL>
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Mind Hand</LABEL>
+		<LABEL lang="de">Gedankengriff</LABEL>
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Moon Ray</LABEL>
+		<LABEL lang="de">Mondstrahl</LABEL>
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Moon Shield</LABEL>
+		<LABEL lang="de">Mondschild</LABEL>
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Past Tongues</LABEL>
+		<LABEL lang="de">Ehemalige Sprachen</LABEL>
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Path of the Righteous</LABEL>
+		<LABEL lang="de">Pfad des Gerechten</LABEL>
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Phantom Strike</LABEL>
+		<LABEL lang="de">Phantomangriff</LABEL>
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Purge Pattern</LABEL>
+		<LABEL lang="de">Struktur Säubern</LABEL>
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Rapid Strike</LABEL>
+		<LABEL lang="de">Rascher Schlag</LABEL>
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Regeneration</LABEL>
+		<LABEL lang="de">Regeneration</LABEL>
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Rundown</LABEL>
+		<LABEL lang="de">Umfahren</LABEL>
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Sense Animals</LABEL>
+		<LABEL lang="de">Tiere Erspüren</LABEL>		
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Shadow Step</LABEL>
+		<LABEL lang="de">Schattenschritt</LABEL>		
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Shield of the Innocent</LABEL>
+		<LABEL lang="de">Schild der Unschuldigen</LABEL>		
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Spirit Blend</LABEL>
+		<LABEL lang="de">Seelengemisch</LABEL>		
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Steer Wagon</LABEL>
+		<LABEL lang="de">Wagen Lenken</LABEL>		
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Store Knowledge</LABEL>
+		<LABEL lang="de">Wissen Speichern</LABEL>				
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Takedown</LABEL>
+		<LABEL lang="de">Zu Boden Bringen</LABEL>
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Task Kin</LABEL>
+		<LABEL lang="de">Verwandte Seele Beauftragen</LABEL>				
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Thunderer's Astrology</LABEL>
+		<LABEL lang="de">***</LABEL>				
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Touch of the Phoenix</LABEL>
+		<LABEL lang="de">Berührung des Phoenix</LABEL>				
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Trading</LABEL>
+		<LABEL lang="de">Handeln</LABEL>				
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Uppercut</LABEL>
+		<LABEL lang="de">Uppercut</LABEL>		
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Wind Slash</LABEL>
+		<LABEL lang="de">Windhieb</LABEL>		
+	</CAPABILITY>	
 </TRANSLATIONS>

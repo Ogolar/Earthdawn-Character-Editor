@@ -2,15 +2,59 @@
 <TRANSLATIONS rulesetversion="ED3" xmlns="http://earthdawn.com/translation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://earthdawn.com/translation ../earthdawntranslation.xsd">
 
 	<CAPABILITY>
+		<LABEL lang="en">Astral Camouflage</LABEL>
+		<LABEL lang="de">Astrale Tarnung</LABEL>
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Aura Of Awe</LABEL>
+		<LABEL lang="de">Aura der Ehrfurcht</LABEL>		
+	</CAPABILITY>	
+	<CAPABILITY>
 		<LABEL lang="en">Bargain With Summoned Creature</LABEL>
 		<LABEL lang="de">Feilschen mit beschworenem Wesen</LABEL>		
 	</CAPABILITY>
 	<CAPABILITY>
-		<LABEL lang="en">Gain Surprise</LABEL>
-		<LABEL lang="de">Überrumpelung</LABEL>
+		<LABEL lang="en">Corrupt Karma</LABEL>
+		<LABEL lang="de">Karma Verderben</LABEL>
 	</CAPABILITY>
 	<CAPABILITY>
+		<LABEL lang="en">Corrupt Reality</LABEL>
+		<LABEL lang="de">Realität Verderben</LABEL>
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Create Shadow</LABEL>
+		<LABEL lang="de">Schatten Erschaffen</LABEL>
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Cursed Luck</LABEL>
+		<LABEL lang="de">Verfluchtes Glück</LABEL>
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Damage Shift</LABEL>
+		<LABEL lang="de">Schadenstransfer</LABEL>
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Disease</LABEL>
+		<LABEL lang="de">Krankheit</LABEL>
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Displace</LABEL>
+		<LABEL lang="de">Versetzen</LABEL>
+	</CAPABILITY>	
+	<CAPABILITY>
+		<LABEL lang="en">Gain Surprise</LABEL>
+		<LABEL lang="de">Überrumpelung</LABEL>
+	</CAPABILITY>	
+	<CAPABILITY>
+		<LABEL lang="en">Intimidation</LABEL>
+		<LABEL lang="de">Einschüchterung</LABEL>
+	</CAPABILITY>
+	<CAPABILITY>
+		<LABEL lang="en">Karma Cancel</LABEL>
+		<LABEL lang="de">Karmablockade</LABEL>
+	</CAPABILITY>	
+	<CAPABILITY>
 		<LABEL lang="en">Mind Wave</LABEL>
-		<LABEL lang="de">***</LABEL>
+		<LABEL lang="de">Gedankenwelle</LABEL>
 	</CAPABILITY>	
 </TRANSLATIONS>
